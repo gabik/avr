@@ -110,7 +110,7 @@ Price 1.5$ on AliExpress
 ## 70mm blank circle round wood disks
 Price: 0.4$ on AliExpress
 
-![cicrle](https://raw.githubusercontent.com/gabik/avr/master/MentosMachne/images/cicrle.png)
+![cicrle](https://raw.githubusercontent.com/gabik/avr/master/MentosMachne/images/circle.png)
 
 #### Description:
 1.    Wood Material: Poplar tree plywood
