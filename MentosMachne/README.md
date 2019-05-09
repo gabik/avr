@@ -1,7 +1,8 @@
 
 [Datasheet](https://www.sparkfun.com/datasheets/Components/SMD/ATMega328.pdf)
 
-[Parts List](jp://github.com/gabik/avr/blob/master/MentosMachne/parts.md)
+[Parts List](http://github.com/gabik/avr/blob/master/MentosMachne/parts.md)
+
 # Registers:
 ## ADC Registers: [c.21 p.250]
 
