@@ -27,12 +27,12 @@ ADC Auto Trigger Source: ADTS2-0 if ADATE=1 this will decide when to auto start 
 
 ## PWM Registers: Using Timer2 (8-bit) [c.15, p.144], [15.7.3]
 
-### TCCR2A: COM2A1 COM2A0 COM2B1 COM2B0 – – WGM21 WGM20
+### TCCR2A: COM2A1 COM2A0 COM2B1 COM2B0 â€“ â€“ WGM21 WGM20
 COM2A1:0: Compare Match Output A Mode: for inverted PWM mode on match: COM2A0:1=1,1 (+ Fast PWM)  
 COM2B1:0: Output B. COM2B1:0=0,0 - normal pin mode  
 WGM21:0: (along with WGM22) Waveform Generation Mode. for Fast PWM and OCRA compare: WGM22:0=1,1,1  
 
-### TCCR2B: FOC2A FOC2B – – WGM22 CS22 CS21 CS20
+### TCCR2B: FOC2A FOC2B â€“ â€“ WGM22 CS22 CS21 CS20
 FOC2A:B: Force Output Compare N (for non-PWM, raise compare flag)  
 WGM22: set to 1 , see TCCR2A  
 CS22:0: Clock select. for 1Mhz and 8 bit = cycle is 3.9Khz. with prescalar of 32, cycle is 122hz CS22:0 = 0,1,1  
@@ -41,14 +41,14 @@ CS22:0: Clock select. for 1Mhz and 8 bit = cycle is 3.9Khz. with prescalar of 32
 
 ### OCR2A:B Output Compare Register Timer2 N
 
-### TIMSK2: – – – – – OCIE2B OCIE2A TOIE2
+### TIMSK2: â€“ â€“ â€“ â€“ â€“ OCIE2B OCIE2A TOIE2
 OCIE2A:B: Interrupts enable, set to 1 if need to fire on compare match  
 TOIE2: Timer2 overflow interrupt enable  
 See TIFR2 for interrupt flags
 
 ## Sleep Registers: [7.11.3 p.45]
 
-### PRR – Power Reduction Register: PRTWI PRTIM2 PRTIM0 – PRTIM1 PRSPI PRUSART0 PRADC
+### PRR â€“ Power Reduction Register: PRTWI PRTIM2 PRTIM0 â€“ PRTIM1 PRSPI PRUSART0 PRADC
 Powering down ADC: PRADC=1  
 Powering down Timer2: PRTIM2=1
 
@@ -76,9 +76,9 @@ To perform -90&deg; we need to first set the PWM cycle to be 20ms (50hz). See th
 #### PWM Cycle:
 ![1.png](https://raw.githubusercontent.com/gabik/avr/master/MentosMachne/images/1.PNG)
 
-#### -90&deg; waze:
+#### -90&deg; wave:
 ![2.png](https://raw.githubusercontent.com/gabik/avr/master/MentosMachne/images/2.PNG)
 
-#### +90&deg; waze:
+#### +90&deg; wave:
 ![3.png](https://raw.githubusercontent.com/gabik/avr/master/MentosMachne/images/3.PNG)
 
