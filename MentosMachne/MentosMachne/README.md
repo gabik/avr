@@ -62,4 +62,23 @@ PD2 -> ____\___ switch button to 5V INT0 (forcing coin)
 PD5 -> Servo (candy motor, from -90 to 90)
 PB5 -> __\__GND switch button (get candy)
 
+![ImageDiagram](https://raw.githubusercontent.com/gabik/avr/master/MentosMachne/images/schemeit-project.png)
+
 Also available on [DigiKey](https://www.digikey.com/schemeit/project/mentos-F8JSJ7O4010G/)
+
+# PWM Tests for Servo
+[Servo Datasheet](http://bienonline.magix.net/public/projekte-teedipper/SG90%209%20g%20Micro%20Servo.pdf)
+
+In order for the servo to perform "go left, wait, go right" we need to perform -90&deg; and than +90&deg;.
+
+To perform -90&deg; we need to first set the PWM cycle to be 20ms (50hz). See the registers description above to set it. for testing I am using Login Analyzer.
+
+#### PWM Cycle:
+![1.png](https://raw.githubusercontent.com/gabik/avr/master/MentosMachne/images/1.PNG)
+
+#### -90&deg; waze:
+![2.png](https://raw.githubusercontent.com/gabik/avr/master/MentosMachne/images/2.PNG)
+
+#### +90&deg; waze:
+![3.png](https://raw.githubusercontent.com/gabik/avr/master/MentosMachne/images/3.PNG)
+
